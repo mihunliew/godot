@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhotj3xooiywp"]
+
+[ext_resource type="Texture2D" uid="uid://mhgrjjxyn3vk" path="res://icon.svg" id="1_qnu35"]
+[ext_resource type="Script" path="res://Icon.gd" id="2_qa4l7"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_vbe3r"]
+resource_name = "Picture2.jpg"
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.024
+anchor_bottom = 0.038
+offset_right = 12.352
+offset_bottom = 15.376
+texture = SubResource("ImageTexture_vbe3r")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(100, 71)
+texture = ExtResource("1_qnu35")
+script = ExtResource("2_qa4l7")
